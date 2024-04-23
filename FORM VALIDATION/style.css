@@ -1,0 +1,127 @@
+*
+{
+	box-sizing: border-box; /*how the box model will look*/
+/*	Width and height values apply to the content, padding, and border.*/
+}
+
+body
+{
+/*	background-color:#10869A ;*/
+background-image: linear-gradient(to right ,#1FBED9, #169F7D);
+display: flex; 	/* how the rectangle box looks*/
+align-items: center;
+justify-content: center; /*items are centered along the line*/
+min-height: 100vh;
+margin: 0px;
+font-family: "Open Sans", sans-serif;
+}
+
+.container /* form-box*/
+{
+	background-color: rgba(255,255,255,0.5);
+	border-radius:10px;
+	box-shadow: 0 4px 10px 4px rgba(9,38,87,0.7);
+	overflow: hidden;/*header is flowing out of the container so 
+						making the contaier overflow hidden*/
+	width: 400px;
+	max-width:100% ;
+	
+}
+
+.header /*heading*/ 
+{
+	background-color: #71DBEB;
+	padding: 10px 20px;
+}
+
+.header h2
+{
+	margin: 0px;
+}
+
+.form
+{
+	padding: 5px 30px;
+}
+
+.form-control
+{
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	position: relative; /*relative to its parent i.e form */
+}
+
+.form-control label /* labelname */
+{
+	display: inline-block;
+	margin-top:4px;
+	margin-bottom: 3px;
+}
+
+.form-control input  /* inputbox */
+{
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 14px;
+	font-family: inherit;/*inherits from the parent*/
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control.success input
+{
+	border-color: green;
+}
+
+.form-control.error input
+{
+	border-color: red;
+}
+.form-control i
+{
+	visibility: hidden;
+	position: absolute;/*the top and right will be applied 
+						not wrt its parent ele */
+	top: 40px;
+	right:15px;
+}
+
+.form-control.success i.fa-circle-check
+{
+	color: green;
+	visibility: visible;
+}
+
+.form-control.error i.fa-solid.fa-circle-exclamation
+{
+	color: red;
+	visibility: visible;
+}
+
+.form-control small
+{
+	visibility: hidden;
+	position: absolute;
+	top: 70px;
+	bottom: 0px;
+	left: 2px;
+}
+
+.form-control.error small
+{
+	color: red;
+	visibility: visible;
+}
+.form button
+{
+	background-color: #088598;
+	border: 2px solid #0D7687;
+	border-radius: 5px;
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	font-family: inherit;
+}

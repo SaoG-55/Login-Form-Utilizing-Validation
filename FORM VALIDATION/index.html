@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/0bcbe0ce2c.js" crossorigin="anonymous"></script>
+
+	
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h2> Account Login</h2>
+		</div>
+		<form class="form" id="form">
+			<!-- 1st field -->
+			<div class="form-control ">
+				<!--for username right success will give green color border -->
+				<label>Username:</label>
+				<input type="text" placeholder="saodev" id="username">
+				<i class="fa-solid fa-circle-check"></i>
+				<i class="fa-solid fa-circle-exclamation"></i>
+				
+				<small>Error message</small>
+			</div>
+
+			<!-- 2nd field -->
+			<div class="form-control ">
+				<!--for email wromg error will give red color border-->
+				<label>Email:</label>
+				<input type="email" placeholder="saodev@gmail.com" id="email">
+				<i class="fa-solid fa-circle-check"></i>
+				<i class="fa-solid fa-circle-exclamation"></i>
+				
+				<small>Error message</small>
+			</div>
+
+			<!-- 3rd field -->
+			<div class="form-control">
+				<label>Password:</label>
+				<input type="password" placeholder="Password" id="password">
+				<i class="fa-solid fa-circle-check"></i>
+				<i class="fa-solid fa-circle-exclamation"></i>
+				
+				<small>Error message</small>
+			</div>
+
+			<!--  4th field -->
+			<div class="form-control">
+				<label>Retype Password:</label>
+				<input type="password" placeholder="Password two" id="password2">
+				<i class="fa-solid fa-circle-check"></i>
+				<i class="fa-solid fa-circle-exclamation"></i>
+				
+				<small>Error message</small>
+			</div>
+
+			<button>Submit</button><br>
+		</form>
+	</div>
+	<script src="script.js"></script> 
+</body>
+</html>
